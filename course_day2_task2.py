@@ -8,14 +8,14 @@ while True:
     except ValueError:
         print("This was not an integer! Try again...")
 
-result = a
-helper = a
-if exp == 0 :
-    result = 1
-else :
-    for i in range(1,exp) :
-        for m in range(1,a) :
+helper = 0
+result = 1
+
+for i in range(exp) :
+        helper = 0
+        for m in range(a) :
             helper += result
         result = helper
+
 
 print(f"{a} to the power of {exp} equals {result} ")
